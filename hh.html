@@ -1,0 +1,147 @@
+<html>
+<head></head>
+<body>
+
+
+
+	<div id="torre1" style="width: 28%; height: 200px; margin-left: 4%; border:solid black; float: left; background-color: white;">
+
+		<div id="espacioDeRelleno" style="width: 100%; height: 40px;"></div>
+		<div id="primerEspacio" style="width: 10%; height: 40px; background-color: rgb(0, 255, 255); margin-left: auto; margin-right: auto;"></div>
+		<div id="segundoEspacio" style="width: 30%; height: 40px; background-color: rgb(0, 204, 0); margin-left: auto; margin-right: auto;"></div>
+		<div id="tercerEspacio" style="width: 50%; height: 40px; background-color: rgb(255, 0, 255); margin-left: auto; margin-right: auto;"></div>
+		<div id="cuartoEspacio" style="width: 70%; height: 40px; background-color: rgb(255, 0, 0); margin-left: auto; margin-right: auto;"></div>
+
+	</div>
+
+	<div style="width: 28%; height: 200px; margin-left: 4%; border: solid black; float: left; background-color: white;">
+
+		<div id="cero" style="width: 100%; height: 40px;"></div>
+		<div id="uno" style="width: 100%; height: 40px;"></div>
+		<div id="dos" style="width: 100%; height: 40px;"></div>
+		<div id="tres" style="width: 100%; height: 40px;"></div>
+		<div id="cuatro" style="width: 100%; height: 40px;"></div>
+
+	</div>
+
+	<div style="width: 28%; height: 200px; margin-left: 4%; border: solid black; float: left; background-color: white;">
+
+		<div id="0" style="width: 100%; height: 40px;"></div>
+		<div id="1" style="width: 100%; height: 40px;"></div>
+		<div id="2" style="width: 100%; height: 40px;"></div>
+		<div id="3" style="width: 100%; height: 40px;"></div>
+		<div id="4" style="width: 100%; height: 40px;"></div>
+
+	</div>
+
+
+
+<div style="text-align: center;">
+
+<button onclick="setTimeout(paso1, 1000);setTimeout(paso2, 2000);setTimeout(paso3, 3000);setTimeout(paso4, 4000);setTimeout(paso5, 5000);setTimeout(paso6, 6000);setTimeout(paso7, 7000);setTimeout(paso8, 8000);setTimeout(paso9, 9000);setTimeout(paso10, 10000);setTimeout(paso11, 11000);setTimeout(paso12, 12000);setTimeout(paso13, 13000);setTimeout(paso14, 14000);setTimeout(paso15, 15000)";>Resolver</button>
+
+</div>
+
+<script>
+var discoRelleno = document.getElementById("espacioDeRelleno")
+var primerDisco = document.getElementById("primerEspacio")
+var segundoDisco = document.getElementById("segundoEspacio")
+var tercerDisco = document.getElementById("tercerEspacio")
+var cuartoDisco = document.getElementById("cuartoEspacio")
+
+
+	function paso1(){
+		document.getElementById("cuatro").appendChild(primerDisco);
+		var newDiv = document.createElement("div");		
+		newDiv.id="t1";
+		newDiv.style.height="40px";
+		var eElement = document.getElementById("torre1");
+		eElement.insertBefore(newDiv, eElement.firstChild);
+	}
+
+	function paso2(){
+		document.getElementById("4").appendChild(segundoDisco);
+		var newDiv = document.createElement("div");		
+		newDiv.id="t2";
+		newDiv.style.height="40px";
+		var eElement = document.getElementById("torre1");
+		eElement.insertBefore(newDiv, eElement.firstChild);
+	}
+
+	function paso3(){
+
+		document.getElementById("3").appendChild(primerDisco);
+	}
+
+	function paso4(){
+		document.getElementById("cuatro").appendChild(tercerDisco);
+		var newDiv = document.createElement("div");		
+		newDiv.id="t3";
+		newDiv.style.height="40px";
+		var eElement = document.getElementById("torre1");
+		eElement.insertBefore(newDiv, eElement.firstChild);
+	}
+
+	function paso5(){
+
+		document.getElementById("espacioDeRelleno").appendChild(primerDisco);
+	}
+
+	function paso6(){
+
+			document.getElementById("tres").appendChild(segundoDisco);
+	}
+
+	function paso7(){
+
+			document.getElementById("dos").appendChild(primerDisco);
+	}
+
+	function paso8(){
+
+			document.getElementById("4").appendChild(cuartoDisco);
+	}
+
+	function paso9(){
+
+			document.getElementById("3").appendChild(primerDisco);
+			var newDiv = document.createElement("div");		
+			newDiv.id="t4";
+			newDiv.style.height="40px";
+			var eElement = document.getElementById("torre1");
+			eElement.insertBefore(newDiv, eElement.firstChild);
+	}
+
+	function paso10(){
+
+			document.getElementById("espacioDeRelleno").appendChild(segundoDisco);
+	}
+
+	function paso11(){
+
+			document.getElementById("t1").appendChild(primerDisco);
+	}
+
+	function paso12(){
+
+			document.getElementById("3").appendChild(tercerDisco);
+	}
+
+	function paso13(){
+
+			document.getElementById("cuatro").appendChild(primerDisco);
+	}
+
+	function paso14(){
+
+			document.getElementById("2").appendChild(segundoDisco);
+	}
+
+	function paso15(){
+
+			document.getElementById("1").appendChild(primerDisco);
+	}
+
+</script>
+</body>
+</html>
